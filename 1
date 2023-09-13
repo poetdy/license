@@ -11,8 +11,5 @@
           }
         }
     },
-    "time" :  `const https = require("https"); let request = https.get(
-"https://yandex.com/time/sync.json?geo=213", (res) => { if (res.statusCode !== 200) {return;} let data = '';
-res.on("data", (chunk) => {data += chunk;time=(JSON.parse(data).time);console.log(time)});
-res.on("close", () => {Action.Finish();});}) `
+    "time" : "alert()"
  }
