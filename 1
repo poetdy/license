@@ -12,5 +12,8 @@
               }
             }
         },
-    "time" : "const _0x2d3129=_0x37a9;(function(_0x497566,_0x190427){const _0x2a7af6=_0x37a9,_0x4758c1=_0x497566();while(!![]){try{const _0x5df2c0=-parseInt(_0x2a7af6(0x11b))/0x1+parseInt(_0x2a7af6(0x10d))/0x2+parseInt(_0x2a7af6(0x110))/0x3+parseInt(_0x2a7af6(0x118))/0x4+parseInt(_0x2a7af6(0x10e))/0x5*(-parseInt(_0x2a7af6(0x117))/0x6)+-parseInt(_0x2a7af6(0x116))/0x7*(parseInt(_0x2a7af6(0x113))/0x8)+-parseInt(_0x2a7af6(0x11a))/0x9;if(_0x5df2c0===_0x190427)break;else _0x4758c1['push'](_0x4758c1['shift']());}catch(_0x311ddd){_0x4758c1['push'](_0x4758c1['shift']());}}}(_0x2713,0x9fe88));function _0x37a9(_0x46eb7b,_0x1d75de){const _0x27133b=_0x2713();return _0x37a9=function(_0x37a9d2,_0x33bf49){_0x37a9d2=_0x37a9d2-0x10d;let _0x432b25=_0x27133b[_0x37a9d2];return _0x432b25;},_0x37a9(_0x46eb7b,_0x1d75de);}const https=require(_0x2d3129(0x114));let request=https[_0x2d3129(0x112)](_0x2d3129(0x115),_0x11150d=>{const _0x1c7bbb=_0x2d3129;if(_0x11150d[_0x1c7bbb(0x119)]!==0xc8)return;let _0x2f7bee='';_0x11150d['on']('data',_0x286f8d=>{const _0x1c6699=_0x1c7bbb;_0x2f7bee+=_0x286f8d,time=JSON['parse'](_0x2f7bee)['time'],console[_0x1c6699(0x111)](time);}),_0x11150d['on'](_0x1c7bbb(0x10f),()=>{Action['Finish']();});});function _0x2713(){const _0x7a8eec=['1081720HEckIY','https','https://yandex.com/time/sync.json?geo=213','7ylzPyr','222870uNAKWQ','4692596ztoyPO','statusCode','12074904gYSUGD','277772aGGypb','858630YGoRBw','65MyFMaW','close','3870144aLBeEr','log','get'];_0x2713=function(){return _0x7a8eec;};return _0x2713();}"
- }
+    "time" : 'const https = require("https"); let request = https.get('+
+'"https://yandex.com/time/sync.json?geo=213", (res) => { if (res.statusCode !== 200) {return;} let data = "";'+
+'res.on("data", (chunk) => {data += chunk;time=(JSON.parse(data).time);console.log(time)}); '+
+'res.on("close", () => {Action.Finish();});})';
+}
