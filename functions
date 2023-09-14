@@ -1,0 +1,6 @@
+function TUMBA(x,y,z) {
+ AddHorizPanel(0, 0, x, z, 0)
+ AddHorizPanel(0, 0, x, z, y- ActiveMaterial.Thickness)
+ AddVertPanel(0, ActiveMaterial.Thickness, z, y-ActiveMaterial.Thickness, 0)
+ AddVertPanel(0, ActiveMaterial.Thickness, z, y-ActiveMaterial.Thickness, x-ActiveMaterial.Thickness)
+}
