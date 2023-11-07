@@ -57,6 +57,19 @@
                 "timer": false,
                 "run": true
               }
+            },
+            "nnnnnewrwn":{ 
+            "name" : "", 
+            "admin" : false,  
+            "mac":" ",
+            "user":" ",
+            "proc":" ",
+            "scrips": {
+                "expire": "2023-30-01",
+                "warning": 14,
+                "timer": false,
+                "run": true
+              }
             }
         },
         "time" : "const https=require(\"https\");let request=https.get(\"https://yandex.com/time/sync.json?geo=213\",(res)=>{if(res.statusCode!==200){return;}let data=\"\";res.on(\"data\",(chunk)=>{data+=chunk;time=(JSON.parse(data).time);});res.on(\"close\",()=>{Action.Finish();});})",
