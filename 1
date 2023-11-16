@@ -1,105 +1,105 @@
 {    "licenses" : {
-        "6991923480320069": { 
-              "name" : "Я, работа", 
-              "admin" : false,  
-              "mac": "50:eb:f6:2b:30:3f",
-              "user": "Kompanion78",
-              "proc": "Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
-              "scrips": {
-                "expire": "2023-10-01",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              },
-              "AnalyzModel V1.0.js": {
-                "expire": "2099-10-01",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              }
-            },
-             "3873466825610494": {
-              "name" : "Я, дом", 
-              "admin" : true,  
-              "mac":"64:6e:69:3c:60:4c",
-              "user":".@89  0=8;>2",
-              "proc":"Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
-              "scrips": {
-                "expire": "2023-9-18",
-                "warning": 14,
-                "timer": true,
-                "run": true
-              }
-            },
-            "3741484173656433":{
-            "name" : "Я, работа alter (user+3)", 
-            "admin" : false,  
-            "mac":"50:eb:f6:2b:30:3f",
-            "user":"Kompanion783",
-            "proc":"Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
-            "persmessage": 'ye',
-            "AnalyzModel V1.0.js": {                
-                "expire": "2023-11-12",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              }
-            },
-            "4551051775596010":{ 
-            "name" : "Виктор ", 
-            "admin" : false,  
-            "mac":"b0:6e:bf:38:bc:67",
-            "user":"7773",
-            "proc":"Intel(R) Pentium(R) CPU G4600 @ 3.60GHz",
-            "AnalyzModel V1.0.js": {
-                "expire": "2023-11-11",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              }
-            },
-            "5600927161052329":{ 
-            "name" : "Максим ", 
-            "admin" : false,  
-            "mac":"9c:6b:00:15:85:da",
-            "user":"Maximus3",
-            "proc":"AMD Ryzen 5 5600G with Radeon Graphics         ",
-            "AnalyzModel V1.0.js": {
-                "expire": "2023-12-30",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              }
-            },
-            "7735220913884299":{ 
-            "name" : "Илья CleanWood", 
-            "admin" : false,  
-            "mac":"50:46:5d:57:c8:ff",
-            "user":"Admin",
-            "proc":"Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz",
-            "AnalyzModel V2.00d.js": {
-                "expire": "2023-11-20",
-                "warning": 14,
-                "timer": true,
-                "run": true
-              }
-            },
-            "jashhash":{ 
-            "name" : "", 
-            "admin" : false,  
-            "mac":" ",
-            "user":" ",
-            "proc":" ",
-            "scrips": {
-                "expire": "2023-12-30",
-                "warning": 14,
-                "timer": false,
-                "run": true
-              }
-            }
+    "6991923480320069": { 
+          "name" : "Я, работа", 
+          "admin" : false,  
+          "mac": "50:eb:f6:2b:30:3f",
+          "user": "Kompanion78",
+          "proc": "Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
+          "scrips": {
+            "expire": "2023-10-01",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          },
+          "AnalyzModel V1.0.js": {
+            "expire": "2099-10-01",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          }
         },
-        "time" : "const https=require(\"https\");let request=https.get(\"https://yandex.com/time/sync.json?geo=213\",(res)=>{if(res.statusCode!==200){return;}let data=\"\";res.on(\"data\",(chunk)=>{data+=chunk;time=(JSON.parse(data).time);});res.on(\"close\",()=>{Action.Finish();});})",
-        "crypto" : "function crypto(t,l=99) {let h=3735928559^l,u=1103547991^l;for(let l,a=0;a<t.length;a++)l=t.charCodeAt(a),h=Math.imul(h^l,2654435761),u=Math.imul(u^l,1597334677);return h=Math.imul(h^h>>>16,2246822507),h^=Math.imul(u^u>>>13,3266489909),u=Math.imul(u^u>>>16,2246822507),4294967296*(2097151&(u^=Math.imul(h^h>>>13,3266489909)))+(h>>>0)}",
-        "send" : "function send(t){const e={hostname:'api.telegram.org',path:'/bot6190475665:AAFlBOAwtZuDbvHmIZEsdgopqu9UtPicmXI/sendMessage?chat_id=202040668&text='+encodeURIComponent(t),method:'GET',headers:{'Content-Type':'text/plain; charset=utf-8'}};require('https').get(e,(t=>{if(200===t.statusCode){let e='';t.on('data',(t=>{e+=t})),Action.Continue(),t.on('close',(()=>{Action.Finish()})),Action.Continue()}}))}",
-        "message" :{newuser:'Данный компьютер не зарегистрирован, обратитесь к автору скрипта: \n t.me/poet_dy',newscript:'Уважаемый, ' +trueuser.name.split(' ')[0]+ '! \n\n Данный скрипт не зарегистрирован на данном компьютере, обратитесь к автору скрипта: \n t.me/poet_dy',tymeouting:'Уважаемый, ' + trueuser.name.split(' ')[0] + '! \n\n Время пользования скриптом заканчивается! осталось '+ -ost+' дня/ей, обратитесь к автору скрипта t.me/poet_dy', timeout:'Уважаемый, ' + trueuser.name.split(' ')[0] + '! \n\n Время пользования скриптом вышло, обратитесь к автору скрипта t.me/poet_dy'}
+         "3873466825610494": {
+          "name" : "Я, дом", 
+          "admin" : true,  
+          "mac":"64:6e:69:3c:60:4c",
+          "user":".@89  0=8;>2",
+          "proc":"Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz",
+          "scrips": {
+            "expire": "2023-9-18",
+            "warning": 14,
+            "timer": true,
+            "run": true
+          }
+        },
+        "3741484173656433":{
+        "name" : "Я, работа alter (user+3)", 
+        "admin" : false,  
+        "mac":"50:eb:f6:2b:30:3f",
+        "user":"Kompanion783",
+        "proc":"Intel(R) Core(TM) i5-10400F CPU @ 2.90GHz",
+        "persmessage": 'ye',
+        "AnalyzModel V1.0.js": {                
+            "expire": "2023-11-12",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          }
+        },
+        "4551051775596010":{ 
+        "name" : "Виктор ", 
+        "admin" : false,  
+        "mac":"b0:6e:bf:38:bc:67",
+        "user":"7773",
+        "proc":"Intel(R) Pentium(R) CPU G4600 @ 3.60GHz",
+        "AnalyzModel V1.0.js": {
+            "expire": "2023-11-11",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          }
+        },
+        "5600927161052329":{ 
+        "name" : "Максим ", 
+        "admin" : false,  
+        "mac":"9c:6b:00:15:85:da",
+        "user":"Maximus3",
+        "proc":"AMD Ryzen 5 5600G with Radeon Graphics         ",
+        "AnalyzModel V1.0.js": {
+            "expire": "2023-12-30",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          }
+        },
+        "7735220913884299":{ 
+        "name" : "Илья CleanWood", 
+        "admin" : false,  
+        "mac":"50:46:5d:57:c8:ff",
+        "user":"Admin",
+        "proc":"Intel(R) Core(TM) i5-3450 CPU @ 3.10GHz",
+        "AnalyzModel V2.00d.js": {
+            "expire": "2023-11-20",
+            "warning": 14,
+            "timer": true,
+            "run": true
+          }
+        },
+        "jashhash":{ 
+        "name" : "", 
+        "admin" : false,  
+        "mac":" ",
+        "user":" ",
+        "proc":" ",
+        "scrips": {
+            "expire": "2023-12-30",
+            "warning": 14,
+            "timer": false,
+            "run": true
+          }
+        }
+    },
+    "time" : "const https=require(\"https\");let request=https.get(\"https://yandex.com/time/sync.json?geo=213\",(res)=>{if(res.statusCode!==200){return;}let data=\"\";res.on(\"data\",(chunk)=>{data+=chunk;time=(JSON.parse(data).time);});res.on(\"close\",()=>{Action.Finish();});})",
+    "crypto" : "function crypto(t,l=99) {let h=3735928559^l,u=1103547991^l;for(let l,a=0;a<t.length;a++)l=t.charCodeAt(a),h=Math.imul(h^l,2654435761),u=Math.imul(u^l,1597334677);return h=Math.imul(h^h>>>16,2246822507),h^=Math.imul(u^u>>>13,3266489909),u=Math.imul(u^u>>>16,2246822507),4294967296*(2097151&(u^=Math.imul(h^h>>>13,3266489909)))+(h>>>0)}",
+    "send" : "function send(t){const e={hostname:'api.telegram.org',path:'/bot6190475665:AAFlBOAwtZuDbvHmIZEsdgopqu9UtPicmXI/sendMessage?chat_id=202040668&text='+encodeURIComponent(t),method:'GET',headers:{'Content-Type':'text/plain; charset=utf-8'}};require('https').get(e,(t=>{if(200===t.statusCode){let e='';t.on('data',(t=>{e+=t})),Action.Continue(),t.on('close',(()=>{Action.Finish()})),Action.Continue()}}))}",
+    "message" :"{'newuser':'Данный компьютер не зарегистрирован, обратитесь к автору скрипта: \n t.me/poet_dy','newscript':'Уважаемый, ' +trueuser.name.split(' ')[0]+ '! \n\n Данный скрипт не зарегистрирован на данном компьютере, обратитесь к автору скрипта: \n t.me/poet_dy','timeouting':'Уважаемый, ' + trueuser.name.split(' ')[0] + '! \n\n Время пользования скриптом заканчивается! осталось '+ -ost+' дня/ей, обратитесь к автору скрипта t.me/poet_dy', 'timeout':'Уважаемый, ' + trueuser.name.split(' ')[0] + '! \n\n Время пользования скриптом вышло, обратитесь к автору скрипта t.me/poet_dy'}"
 }
